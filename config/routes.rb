@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root 'index#index'
+
+  resources :index
   resources :usuarios
   resources :posts
   resources :pets
