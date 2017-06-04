@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  situacao: 1
+  raca: MyString
+  porte: MyString
+  observacao: MyString
+
+two:
+  situacao: 1
+  raca: MyString
+  porte: MyString
+  observacao: MyString
