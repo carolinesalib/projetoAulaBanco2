@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= f.label :cidade_id %>
-    <%= f.text_field :cidade_id %>
+    <%= f.select :cidade_id, options_for_select(Cidade.all.map{|s|[s.nome, s.id]}) %>
   </div>
 
   <div class="actions">

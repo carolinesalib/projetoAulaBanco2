@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= f.label :endereco_id %>
-    <%= f.text_field :endereco_id %>
+    <%= f.select :endereco_id, options_for_select(Pai.all.map{|s|[s.nome, s.id]}) %>
   </div>
 
   <div class="actions">

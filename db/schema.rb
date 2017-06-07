@@ -43,10 +43,10 @@ ActiveRecord::Schema.define(version: 20170601231444) do
   create_table "estados", force: :cascade do |t|
     t.string   "nome"
     t.string   "sigla"
-    t.integer  "pais_id"
+    t.integer  "pai_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["pais_id"], name: "index_estados_on_pais_id", using: :btree
+    t.index ["pai_id"], name: "index_estados_on_pai_id", using: :btree
   end
 
   create_table "localizacaos", force: :cascade do |t|
@@ -101,7 +101,7 @@ ActiveRecord::Schema.define(version: 20170601231444) do
   add_foreign_key "bairros", "cidades"
   add_foreign_key "cidades", "estados"
   add_foreign_key "enderecos", "bairros"
-  add_foreign_key "estados", "pais", column: "pais_id"
+  add_foreign_key "estados", "pais"
   add_foreign_key "localizacaos", "enderecos"
   add_foreign_key "posts", "localizacaos"
   add_foreign_key "posts", "pets"

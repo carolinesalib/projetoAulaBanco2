@@ -15,7 +15,7 @@
     <% @bairros.each do |bairro| %>
       <tr>
         <td><%= bairro.nome %></td>
-        <td><%= bairro.cidade %></td>
+        <td><%= bairro.cidade.nome %></td>
         <td><%= link_to 'Show', bairro %></td>
         <td><%= link_to 'Edit', edit_bairro_path(bairro) %></td>
         <td><%= link_to 'Destroy', bairro, method: :delete, data: { confirm: 'Are you sure?' } %></td>

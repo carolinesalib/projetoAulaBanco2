@@ -22,8 +22,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :pais_id %>
-    <%= f.text_field :pais_id %>
+    <%= f.label :pai_id %>
+    <%= f.select :pai_id, options_for_select(Pai.all.map{|s|[s.nome, s.id]}) %>
   </div>
 
   <div class="actions">

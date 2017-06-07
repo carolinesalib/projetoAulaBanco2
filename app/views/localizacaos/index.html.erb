@@ -15,7 +15,7 @@
     <% @localizacaos.each do |localizacao| %>
       <tr>
         <td><%= localizacao.geolocalizacao %></td>
-        <td><%= localizacao.endereco %></td>
+        <td><%= localizacao.endereco.logradouro %></td>
         <td><%= link_to 'Show', localizacao %></td>
         <td><%= link_to 'Edit', edit_localizacao_path(localizacao) %></td>
         <td><%= link_to 'Destroy', localizacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>

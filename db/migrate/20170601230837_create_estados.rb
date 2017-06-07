@@ -3,7 +3,7 @@ class CreateEstados < ActiveRecord::Migration[5.0]
     create_table :estados do |t|
       t.string :nome
       t.string :sigla
-      t.references :pais, foreign_key: true
+      t.references :pai, foreign_key: true
 
       t.timestamps
     end

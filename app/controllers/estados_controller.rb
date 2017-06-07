@@ -69,6 +69,6 @@ class EstadosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def estado_params
-      params.require(:estado).permit(:nome, :sigla, :pais_id)
+      params.require(:estado).permit(:nome, :sigla, :pai_id)
     end
 end
