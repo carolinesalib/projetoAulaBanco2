@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'diagrama/index'
+
   root 'index#index'
 
   resources :index
