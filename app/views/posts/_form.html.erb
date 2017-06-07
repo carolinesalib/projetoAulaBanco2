@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :localizacao_id %>
-    <%= f.text_field :localizacao_id %>
+    <%= f.select :localizacao_id, options_for_select(Localizacao.all.map{|s|[s.geolocalizacao, s.id]}) %>
   </div>
 
   <div class="actions">
