@@ -1,4 +1,4 @@
-### Inserir novo bairro
+### Inserir novo endereço
 
 <pre><code>INSERT INTO "enderecos" ("logradouro", "cep", "bairro_id", "created_at", "updated_at")
 VALUES ('Rua 1', '88810200', 1, NOW(), NOW());
