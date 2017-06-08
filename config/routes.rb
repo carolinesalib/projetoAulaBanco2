@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'consulta_banco/index'
+
+  get 'exemplos/index'
+
   get 'about/index'
 
   get 'diagrama/index'

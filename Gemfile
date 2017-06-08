@@ -33,6 +33,7 @@ gem 'rails-erd'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 gem 'bootswatch-rails'
+gem 'markdown-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
