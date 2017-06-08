@@ -23,7 +23,8 @@
 
 <p>
   <strong>Localizacao:</strong><br>
-  <%= @post.localizacao.geolocalizacao %>
+  Endereço: <%= @post.localizacao.endereco.logradouro %> <br>
+  Geolocalização: <%= @post.localizacao.geolocalizacao %>
 </p>
 
 <h3>Dados do pet</h3>
