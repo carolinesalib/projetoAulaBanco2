@@ -17,8 +17,31 @@
 </p>
 
 <p>
+  <strong>Doador:</strong><br>
+  <%= @post.usuario.nome %>
+</p>
+
+<p>
   <strong>Localizacao:</strong><br>
   <%= @post.localizacao.geolocalizacao %>
+</p>
+
+<h3>Dados do pet</h3>
+<p>
+  <strong>Nome:</strong><br>
+  <%= @post.pet.nome %>
+</p>
+<p>
+  <strong>Porte:</strong><br>
+  <%= @post.pet.porte %>
+</p>
+<p>
+  <strong>Raça:</strong><br>
+  <%= @post.pet.raca %>
+</p>
+<p>
+  <strong>Observação:</strong><br>
+  <%= @post.pet.observacao %>
 </p>
 
 <%= link_to 'Editar', edit_post_path(@post), class: 'btn btn-primary' %>
